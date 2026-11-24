@@ -1,6 +1,6 @@
-# Sistema Despertar · Especificación v0.3
+# Sistema Despertar · Especificación v0.4
 
-Fuente visual y jugable: `prototipo/sistema-despertar-v0.3.html`.
+Fuente visual y jugable: `prototipo/sistema-despertar-v0.4.html`.
 
 ## 1. Las dos obligaciones
 Solo estas dos misiones tienen penalización. Todo lo demás es bonificación.
@@ -154,7 +154,28 @@ La app no reemplaza tratamiento.
 
 - **Portales**: proyecto temido partido en pisos de 10 a 25 min, con el jefe marcado. Alimentan el motor del siguiente paso.
 - **Llave de mazmorra instantánea**: sesión de foco cronometrada, sola o acompañada.
-- **Cambio de clase**: cada módulo del curso desbloquea una clase con misión especial y título.
+- **Cambio de clase**: cada uno de los 8 módulos del programa es una misión de cambio de clase (ver 9b).
+
+## 9b. Clases · Programa de 8 módulos
+Fuente: programa "Infraestructura externa para tu cerebro TDAH", https://academiatdah.com/programa-8-modulos (leído el 2026-11-24).
+La misión de cambio de clase usa el mismo criterio de instalación del programa.
+
+| # | Módulo | Clase | Mínimo viable | Misión de cambio de clase | Desbloquea | Título |
+|---|---|---|---|---|---|---|
+| 1 | Captura externalizada | Archivista | Una app única, abierta a diario | Una sola herramienta de captura a diario por 2 semanas | Widget de captura rápida | "El que no olvida" |
+| 2 | Diseña tu entorno | Arquitecto/a del Entorno | 3 cosas en lugar fijo y visible | 3 objetos con lugar fijo, 2 semanas sin perderlos | Mapa de la base | "Su casa le recuerda las cosas" |
+| 3 | Automatiza lo repetitivo | Artífice | 1 pago automatizado + trámites agendados | Lo mismo, funcionando 2 semanas | Vencimientos recurrentes en el radar | "Piloto automático" |
+| 4 | Despertar anclado | Centinela del Alba | Misma hora ±45 min | 4 de 7 días, 2 semanas seguidas | Ritual anclado a la hora de despertar | "Primera luz" |
+| 5 | Ejercicio mínimo | Guerrero/a | 20 min de caminata, 3 veces/sem | 3 veces/sem, 2 semanas seguidas | Mover el cuerpo cuenta por semana (3/7) | "Cuerpo en marcha" |
+| 6 | Regulación autonómica | Guardián/a de la Calma | 5 min de respiración lenta al día | 4 de 7 días, 2 semanas | Pausa del Cazador guiada | "Pulso sereno" |
+| 7 | Body doubling | Invocador/a | 2 sesiones acompañadas/sem | 2 por semana, 2 semanas | Llave de mazmorra grupal | "Nunca solo/a" |
+| 8 | Time-blocking | Estratega del Tiempo | 1 bloque profundo/día | Plan del domingo + 1 bloque/día, 2 semanas | Portales agendados en el calendario | "Dueño/a de su agenda" |
+
+Reglas del programa aplicadas:
+- Una sola misión de clase activa a la vez. Orden fijo, no se saltan módulos.
+- Si un módulo instalado decae, su clase queda "dormida" y se reinstala antes de avanzar.
+- Instalar un módulo da +300 XP, 100 cristales, el título y una celebración explícita.
+- Con los 8 instalados: clase final "Cazador/a Despertado/a".
 
 ## 10. Voz del Sistema
 Frases cortas, segunda persona, tono frío y épico, nunca sarcástico. Habla del plan, nunca de la persona.
