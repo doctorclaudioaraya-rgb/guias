@@ -24,3 +24,8 @@ radar de compromisos y reglas de Barkley. Todo está en `SPEC.md` y en el protot
 - [ ] Mover esta carpeta a un repositorio propio, separado de las guías.
 - [ ] Confirmar el sentido de "mínimo obligatorio de 5 minutos": se asumió que es el mínimo diario.
 - [ ] Elegir nombre definitivo de la app ("Sistema Despertar" es provisorio).
+
+## Anotado 2026-11-24
+- [ ] Decidir dónde se guardan los datos de ánimo: solo en el teléfono (modelo Daylio), sincronizados con un servidor, o local con sincronización opcional. Recomendación inicial: local con sincronización opcional.
+- [ ] Evaluar registro de ánimo de 2 toques (escala 1 a 5 + misiones del día como etiquetas) para correlacionar ánimo con ritual, ejercicio y sueño sin pedir datos extra.
+- [ ] Confirmar fecha de entrada en vigencia de la Ley 21.719 y requisitos para datos de salud (dato sensible, consentimiento explícito). Hipótesis: rige desde diciembre de 2026.
