@@ -1,6 +1,6 @@
-# Sistema Despertar · Especificación v0.2
+# Sistema Despertar · Especificación v0.3
 
-Fuente visual y jugable: `prototipo/sistema-despertar-v0.2.html`.
+Fuente visual y jugable: `prototipo/sistema-despertar-v0.3.html`.
 
 ## 1. Las dos obligaciones
 Solo estas dos misiones tienen penalización. Todo lo demás es bonificación.
@@ -39,6 +39,32 @@ Incluye un chequeo de ánimo opcional de una pregunta.
 - Aviso el día anterior y aviso de **hora de salida** (trayecto + margen), no solo la hora del evento.
 - Cuenta regresiva en vencimientos.
 - Pendiente de decidir: integración con Google Calendar o ingreso manual en v1.
+
+## 3b. Registro de ánimo · 2 toques · opcional
+Decidido el 2026-11-24.
+- **Toque 1:** ánimo en escala de 5: 1 Muy mal · 2 Mal · 3 Regular · 4 Bien · 5 Muy bien.
+- **Toque 2:** confirmar etiquetas y guardar. Las misiones hechas ese día vienen marcadas solas (ritual, movimiento, foco, calma, sueño). Extras opcionales: dormí mal, estrés, ansiedad, irritable, olvidé la medicación.
+- No forma parte del mínimo y no tiene penalización.
+- Aparece al cerrar el día con un solo aviso. Se puede registrar en cualquier momento; varios registros en un día se promedian.
+- **Recompensa:** +5 XP por registrar, igual para cualquier valor. Nunca se premia un ánimo alto.
+- **Estadísticas:** desde 14 registros, ánimo promedio en días con y sin cada hábito. Se muestra como asociación, no como causa, y solo si hay al menos 5 días en cada grupo. Calendario anual por colores.
+- **Alerta suave:** ánimo 1 durante 3 días seguidos pausa las penalizaciones, muestra recursos de ayuda y sugiere contactar al tratante. No avisa a nadie salvo autorización previa. La pregunta de autodaño sigue en el chequeo semanal.
+
+## 3c. Almacenamiento de datos
+Decidido el 2026-11-24: **en el teléfono por defecto, con sincronización opcional.**
+- Base de datos local cifrada. Funciona sin conexión y sin cuenta.
+- La sincronización exige consentimiento explícito, separado por propósito y revocable:
+
+| Permiso | Qué se envía | Para qué |
+|---|---|---|
+| Ninguno (por defecto) | Nada sale del teléfono | Uso personal |
+| Respaldo personal | Copia cifrada de todos los datos | Recuperar al cambiar de teléfono |
+| Compartir con mi coach | Resumen semanal de ritual, planificación y ánimo | Seguimiento en el taller |
+| Aportar a la medición del taller | Datos anónimos y agregados | Medir resultados del curso |
+
+- Siempre disponible: exportar todo a un archivo y borrar todo, en el teléfono y en el servidor.
+- Los datos de ánimo nunca van a herramientas de analítica ni de publicidad.
+- Legal: datos de salud son sensibles. Confirmar vigencia y requisitos de la Ley 21.719 (hipótesis: rige desde diciembre de 2026).
 
 ## 4. Reglas de Barkley → mecánicas
 Lista citada de memoria de *Taking Charge of Adult ADHD*. Verificar con el libro.
@@ -83,6 +109,7 @@ Día de recuperación: 1 por semana, el ritual se reduce a autocuidado y radar.
 | Cada paso del ritual | +5 XP |
 | Ritual completo | +30 XP, 10 cristales, 1 Caja de recompensa |
 | Siguiente paso hecho | A: +30 XP · B: +20 XP |
+| Registrar el ánimo | +5 XP, igual para cualquier valor |
 | Planificación semanal | +150 XP, 40 cristales, 1 escudo |
 | Racha de ritual | ×1,10 a los 3 días · ×1,25 a los 7 · ×1,50 a los 14 (tope) |
 | Cada 7 días de racha | 1 escudo, máximo 2 |
