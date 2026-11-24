@@ -3,7 +3,7 @@
 Última actualización: 2026-11-24 (Chile).
 
 ## Dónde quedamos
-Diseño v0.6 terminado: ritual diario de 5 min, planificación semanal que crece de 5 a 30 min, motor del siguiente paso con opción A/B,
+Diseño v0.7 terminado: ritual diario de 5 min, planificación semanal que crece de 5 a 30 min, motor del siguiente paso con opción A/B,
 radar de compromisos, reglas de Barkley, registro de ánimo en 2 toques y almacenamiento local con sincronización opcional, y los 8 módulos del programa como clases. Todo está en `SPEC.md` y en el prototipo.
 
 ## 3 prioridades
@@ -36,4 +36,4 @@ radar de compromisos, reglas de Barkley, registro de ánimo en 2 toques y almace
 - [x] Planificación semanal: **decidido**, crece de 5 a 30 min con los módulos (SPEC 1).
 - [ ] Decidir si la bandeja de captura de la app es "la app única" del módulo 1, o si la app se conecta con Todoist u otras.
 - [ ] Confirmar si el taller pagado usa los mismos 8 módulos del programa gratuito del sitio.
-- [x] Exámenes de rango: **decidido**, usan 4 de 7 días (SPEC 9).
+- [x] Exámenes de rango: **decidido**, se mantienen en 5 de 7 días; los módulos usan 4 de 7 (SPEC 9).

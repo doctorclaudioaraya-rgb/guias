@@ -1,6 +1,6 @@
-# Sistema Despertar · Especificación v0.6
+# Sistema Despertar · Especificación v0.7
 
-Fuente visual y jugable: `prototipo/sistema-despertar-v0.6.html`.
+Fuente visual y jugable: `prototipo/sistema-despertar-v0.7.html`.
 
 ## 1. Las dos obligaciones
 Solo estas dos misiones tienen penalización. Todo lo demás es bonificación.
@@ -150,13 +150,13 @@ La app no reemplaza tratamiento.
 | Rango | Nivel | Examen |
 |---|---|---|
 | E | 1–9 | Inicio |
-| D | 10–19 | Ritual 4/7 días y 1 planificación |
-| C | 20–34 | Ritual 4/7 durante 2 semanas y ambas planificaciones |
-| B | 35–49 | Ritual 17/30 y 4 planificaciones |
-| A | 50–69 | Ritual 35/60, 8 planificaciones y 3 portales cerrados |
+| D | 10–19 | Ritual 5/7 días y 1 planificación |
+| C | 20–34 | Ritual 5/7 durante 2 semanas y ambas planificaciones |
+| B | 35–49 | Ritual 21/30 y 4 planificaciones |
+| A | 50–69 | Ritual 45/60, 8 planificaciones y 3 portales cerrados |
 | S | 70+ | Rango A sostenido 90 días |
 
-Decidido el 2026-11-24: todos los exámenes usan la regla del programa, 4 de 7 días es un buen resultado. No se exige 7 de 7.
+Decidido el 2026-11-24: subir de rango pide 5 de 7 días, porque el rango marca constancia sostenida. Instalar un módulo pide 4 de 7, como en el programa. Nunca se exige 7 de 7.
 
 - **Portales**: proyecto temido partido en pisos de 10 a 25 min, con el jefe marcado. Alimentan el motor del siguiente paso.
 - **Llave de mazmorra instantánea**: sesión de foco cronometrada, sola o acompañada.
