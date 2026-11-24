@@ -3,13 +3,13 @@
 Última actualización: 2026-11-24 (Chile).
 
 ## Dónde quedamos
-Diseño v0.4 terminado: ritual diario de 5 min, planificación semanal de 30 min, motor del siguiente paso con opción A/B,
+Diseño v0.5 terminado: ritual diario de 5 min, planificación semanal que crece de 5 a 30 min, motor del siguiente paso con opción A/B,
 radar de compromisos, reglas de Barkley, registro de ánimo en 2 toques y almacenamiento local con sincronización opcional, y los 8 módulos del programa como clases. Todo está en `SPEC.md` y en el prototipo.
 
 ## 3 prioridades
 1. **Propiedad intelectual.** Confirmar con un abogado que no se usa nada protegido de Solo Leveling. Estado: sin empezar.
 2. **Verificar las reglas de Barkley** contra *Taking Charge of Adult ADHD*. Estado: citadas de memoria.
-3. **Decidir cómo convive la planificación semanal con el orden de los módulos.** El programa dice "nunca saltes módulos", y el time-blocking es el módulo 8. Estado: esperando decisión.
+3. **Decidir si los exámenes de rango bajan de 5/7 a 4/7** para calzar con la regla "4/7 = bien" del programa. Estado: esperando decisión.
 
 ## Siguiente paso
 - **A (prioridad 1):** listar los módulos del taller para armar las clases y sus misiones.
@@ -22,7 +22,7 @@ radar de compromisos, reglas de Barkley, registro de ánimo en 2 toques y almace
 - [ ] Probar la calibración con 5 a 10 personas del taller antes de fijar los valores de XP.
 - [ ] Leer el texto original de Lally 2010.
 - [ ] Mover esta carpeta a un repositorio propio, separado de las guías.
-- [ ] Confirmar el sentido de "mínimo obligatorio de 5 minutos": se asumió que es el mínimo diario.
+- [x] "Mínimo obligatorio de 5 minutos": resuelto, aplica al ritual diario y al nivel inicial de la planificación semanal.
 - [ ] Elegir nombre definitivo de la app ("Sistema Despertar" es provisorio).
 
 ## Anotado 2026-11-24
@@ -33,7 +33,6 @@ radar de compromisos, reglas de Barkley, registro de ánimo en 2 toques y almace
 
 ## Anotado 2026-11-24 · clases
 - [x] Mapear los 8 módulos del programa a clases: **hecho** (SPEC 9b, prototipo v0.4).
-- [ ] Decidir si la planificación semanal de 30 min es obligatoria desde el día 1 o crece hasta el módulo 8.
-- [ ] Decidir si los exámenes de rango bajan de 5/7 a 4/7, para calzar con la regla "4/7 = bien" del programa.
+- [x] Planificación semanal: **decidido**, crece de 5 a 30 min con los módulos (SPEC 1).
 - [ ] Decidir si la bandeja de captura de la app es "la app única" del módulo 1, o si la app se conecta con Todoist u otras.
 - [ ] Confirmar si el taller pagado usa los mismos 8 módulos del programa gratuito del sitio.

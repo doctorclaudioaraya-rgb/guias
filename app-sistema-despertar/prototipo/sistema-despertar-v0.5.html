@@ -158,9 +158,9 @@ footer{margin-top:64px;color:var(--muted);font-size:.85rem;border-top:1px solid 
 
 <div class="wrap">
 <header class="top">
-  <span class="eyebrow">Diseño de producto · App para adultos con TDAH · v0.4</span>
+  <span class="eyebrow">Diseño de producto · App para adultos con TDAH · v0.5</span>
   <h1>Sistema Despertar</h1>
-  <p class="lead">Un sistema de misiones inspirado en "el Sistema" de Solo Leveling y en las reglas de Barkley para el TDAH adulto. Cada día exige un mínimo de 5 minutos de autocuidado y estructura. Cada semana exige 30 minutos de planificación. En todo momento el Sistema muestra solo el siguiente paso, con una segunda opción para elegir.</p>
+  <p class="lead">Un sistema de misiones inspirado en "el Sistema" de Solo Leveling y en las reglas de Barkley para el TDAH adulto. Cada día exige un mínimo de 5 minutos de autocuidado y estructura. Cada semana exige una planificación que parte en 5 minutos y crece hasta 30 a medida que se instalan los módulos. En todo momento el Sistema muestra solo el siguiente paso, con una segunda opción para elegir.</p>
 </header>
 
 <!-- DEMO -->
@@ -213,7 +213,8 @@ footer{margin-top:64px;color:var(--muted);font-size:.85rem;border-top:1px solid 
         <div class="row"><span>Racha de mínimo</span><span id="streak">0 días · ×1.00</span></div>
         <div class="row"><span>Escudos de racha</span><span id="shields">0</span></div>
         <div class="row"><span>Cristales</span><span id="coins">0</span></div>
-        <div class="row"><span>Planificación semanal</span><span id="week" class="wk pend">Pendiente · domingo</span></div>
+        <div class="row"><span>Módulos instalados</span><span>4 / 8 · ejemplo</span></div>
+        <div class="row"><span>Planificación · nivel 20 min</span><span id="week" class="wk pend">Pendiente · domingo</span></div>
         <div class="stats" id="stats"></div>
       </div>
       <p class="warn" id="warn"></p>
@@ -227,7 +228,7 @@ footer{margin-top:64px;color:var(--muted);font-size:.85rem;border-top:1px solid 
       <div class="log" id="log" aria-live="polite"></div>
     </div>
   </div>
-  <p class="demo-note">Demo con datos de ejemplo. Marca el ritual, elige un siguiente paso y cierra el día. El progreso solo vive en esta pestaña.</p>
+  <p class="demo-note">Demo con datos de ejemplo. Muestra a una persona con 4 módulos instalados, por eso su planificación es de 20 minutos y ve dos objetivos. Marca el ritual, elige un siguiente paso y cierra el día. El progreso solo vive en esta pestaña.</p>
 </div>
 <div class="toast" id="toast" hidden><div class="win" id="toastmsg"></div></div>
 
@@ -246,13 +247,14 @@ footer{margin-top:64px;color:var(--muted);font-size:.85rem;border-top:1px solid 
       </ol>
       <p>Plazo por defecto: antes de las 11:00, ajustable. Si a las 11:00 no está, el Sistema avisa una vez y el plazo final pasa a las 20:00.</p>
     </div>
-    <div class="card gold"><h3>Cada semana · Planificación · 30 min</h3>
+    <div class="card gold"><h3>Cada semana · Planificación que crece · 5 a 30 min</h3>
+      <p>Desde el día 1 se exigen 5 minutos. Cada módulo clave instalado suma un bloque, hasta llegar a 30 minutos con el módulo 8. Así se respeta la regla del programa: no saltar módulos.</p>
       <ol>
-        <li><b>Mirar atrás · 5 min.</b> Qué se cumplió, qué se atascó y por qué.</li>
-        <li><b>Vaciar la bandeja · 8 min.</b> Cada pendiente se borra, se agenda, se delega o va a un objetivo.</li>
-        <li><b>Radar semanal · 5 min.</b> Eventos, compromisos, pagos y vencimientos de los próximos 14 días.</li>
-        <li><b>Tres objetivos · 7 min.</b> Ordenarlos 1, 2 y 3, y partir cada uno en pasos de 25 minutos o menos.</li>
-        <li><b>Bloquear horas · 5 min.</b> Poner en el calendario cuándo se trabaja en cada objetivo.</li>
+        <li><b>Desde el día 1 · 5 min.</b> Radar de los próximos 7 días y 1 objetivo con WOOP y su primer paso.</li>
+        <li><b>Con el módulo 1 instalado · 10 min.</b> Se suma vaciar la bandeja: cada pendiente se borra, se agenda, se delega o va a un objetivo.</li>
+        <li><b>Con el módulo 3 instalado · 15 min.</b> El radar se amplía a 14 días, con pagos y vencimientos.</li>
+        <li><b>Con el módulo 4 instalado · 20 min.</b> Se suman mirar atrás y 3 objetivos ordenados 1, 2 y 3.</li>
+        <li><b>Con el módulo 8 instalado · 30 min.</b> Se suma bloquear horas en el calendario para cada objetivo.</li>
       </ol>
       <p>Día por defecto: domingo, ajustable. Desbloquea el motor del siguiente paso para toda la semana.</p>
     </div>
@@ -268,6 +270,7 @@ footer{margin-top:64px;color:var(--muted);font-size:.85rem;border-top:1px solid 
   <div class="grid2">
     <div class="card"><h3>Opción A · prioridad 1</h3><p>El primer paso pendiente del objetivo de mayor prioridad. Se destaca en dorado y da +50% de XP si se elige.</p></div>
     <div class="card"><h3>Opción B · prioridad 2</h3><p>El primer paso del segundo objetivo. Elegirla es válido y no penaliza. Sirve para días de poca energía o cuando A está bloqueada.</p></div>
+    <div class="card"><h3>Antes de tener 3 objetivos</h3><p>Mientras la planificación tenga 1 solo objetivo, la opción A es su siguiente paso y la opción B es una versión de 2 minutos del mismo paso. Así siempre hay dos tarjetas y nunca una lista.</p></div>
     <div class="card"><h3>Cómo se ordena la prioridad</h3><p>Manda el orden que la persona fijó en la planificación semanal. Un compromiso del radar que vence en menos de 72 horas sube a prioridad 1 automáticamente y el Sistema avisa del cambio.</p></div>
     <div class="card"><h3>Al completar un paso</h3><p>Aparece el siguiente paso del mismo objetivo. Si un paso se pospone 3 veces, el Sistema pide partirlo en uno más pequeño.</p></div>
   </div>
@@ -360,7 +363,7 @@ footer{margin-top:64px;color:var(--muted);font-size:.85rem;border-top:1px solid 
       <tr><td>Ritual de Activación completo</td><td>+30 XP, 10 cristales y una Caja de recompensa</td></tr>
       <tr><td>Siguiente paso hecho</td><td>Opción A: +30 XP · Opción B: +20 XP</td></tr>
       <tr><td>Registrar el ánimo</td><td class="num">+5 XP, igual para cualquier valor</td></tr>
-      <tr><td>Planificación semanal completa</td><td>+150 XP, 40 cristales y 1 escudo de racha</td></tr>
+      <tr><td>Planificación semanal completa</td><td>5 XP por minuto del nivel actual, de 25 a 150 XP, más 40 cristales y 1 escudo de racha</td></tr>
       <tr><td>Racha de mínimo</td><td>Multiplicador de XP: 3 días ×1,10 · 7 días ×1,25 · 14 días ×1,50 (tope)</td></tr>
       <tr><td>Cada 7 días de racha</td><td>1 escudo de racha, máximo 2 guardados</td></tr>
       <tr><td>Subir de nivel</td><td>3 puntos libres para stats y 25 cristales</td></tr>
@@ -383,9 +386,9 @@ footer{margin-top:64px;color:var(--muted);font-size:.85rem;border-top:1px solid 
   </div>
   <h3>Planificación semanal no cumplida</h3>
   <div class="ladder">
-    <div class="step"><span class="when">Lunes sin plan</span><div><h3>Portal semanal cerrado</h3><p class="muted">El motor del siguiente paso funciona solo con los objetivos de la semana anterior y la Tienda queda bloqueada. Para abrirla basta una planificación de rescate de 15 minutos, disponible hasta el miércoles.</p></div></div>
+    <div class="step"><span class="when">Lunes sin plan</span><div><h3>Portal semanal cerrado</h3><p class="muted">El motor del siguiente paso funciona solo con los objetivos de la semana anterior y la Tienda queda bloqueada. Para abrirla basta una planificación de rescate de la mitad del nivel actual, con un mínimo de 5 minutos, disponible hasta el miércoles.</p></div></div>
     <div class="step"><span class="when">Miércoles sin plan</span><div><h3>Semana en Fatiga</h3><p class="muted">XP a la mitad hasta el domingo. El domingo siguiente la planificación aparece con una plantilla prellenada para bajar la barrera de entrada.</p></div></div>
-    <div class="step s3"><span class="when">2 semanas sin plan</span><div><h3>Planificación acompañada</h3><p class="muted">Se suspende la penalización semanal. Se ofrece una sesión grupal de planificación del taller o una versión guiada por voz de 15 minutos.</p></div></div>
+    <div class="step s3"><span class="when">2 semanas sin plan</span><div><h3>Planificación acompañada</h3><p class="muted">Se suspende la penalización semanal. Se ofrece una sesión grupal de planificación del taller o una versión guiada por voz del nivel actual.</p></div></div>
   </div>
   <div class="card red"><h3>Freno clínico</h3><p>Chequeo de ánimo semanal opcional, dentro de la planificación. Si la persona marca ánimo muy bajo o ideas de hacerse daño, el Sistema pausa todas las penalizaciones y muestra recursos de ayuda en Chile: Salud Responde 600 360 7777 y la línea de prevención del suicidio *4141. Hay que verificar ambos números antes del lanzamiento. La app no reemplaza tratamiento.</p></div>
 </section>
@@ -445,7 +448,7 @@ footer{margin-top:64px;color:var(--muted);font-size:.85rem;border-top:1px solid 
     <div class="win"><span class="ctx">Mañana, 08:00</span>El Ritual de Activación ha llegado. 5 minutos. Primer paso: un vaso de agua.</div>
     <div class="win"><span class="ctx">Siguiente paso</span>Opción A: escribir 3 títulos del informe, 10 minutos. Opción B: reunir las boletas, 5 minutos. Elige.</div>
     <div class="win"><span class="ctx">Radar</span>Reunión a las 15:00. Debes salir a las 14:35. Quedan 2 horas y 10 minutos.</div>
-    <div class="win"><span class="ctx">Domingo, 18:00</span>La Planificación semanal está disponible. 30 minutos. Sin ella, el portal de la semana no se abre.</div>
+    <div class="win"><span class="ctx">Domingo, 18:00</span>La Planificación semanal está disponible. Tu nivel actual: 5 minutos. Sin ella, el portal de la semana no se abre.</div>
     <div class="win"><span class="ctx">Zona de Penalización</span>Ayer el ritual no se cumplió. Hoy dura 8 minutos. Tu progreso está intacto.</div>
   </div>
 </section>
@@ -477,11 +480,11 @@ footer{margin-top:64px;color:var(--muted);font-size:.85rem;border-top:1px solid 
     <li><b>Datos de salud.</b> Confirmar la vigencia de la Ley 21.719 y sus requisitos para datos sensibles. Hipótesis: rige desde diciembre de 2026.</li>
     <li><b>Calendario.</b> Decidir si el radar se conecta a Google Calendar o si los eventos se ingresan a mano en la versión 1.</li>
     <li><b>Medición.</b> Definir escala de resultado al inicio y a las 8 semanas.</li>
-    <li><b>Clases del curso.</b> Hecho en v0.4. Falta decidir cómo convive la planificación semanal con el orden de los módulos y si el criterio de rango baja a 4 de 7.</li>
+    <li><b>Clases del curso.</b> Hecho en v0.4. La planificación crece con los módulos desde v0.5. Falta decidir si el criterio de rango baja a 4 de 7.</li>
   </ol>
 </section>
 
-<footer>Sistema Despertar · borrador de diseño v0.4 · Inspirado en la estructura narrativa de un anime, sin afiliación con sus titulares. No reemplaza evaluación ni tratamiento clínico.</footer>
+<footer>Sistema Despertar · borrador de diseño v0.5 · Inspirado en la estructura narrativa de un anime, sin afiliación con sus titulares. No reemplaza evaluación ni tratamiento clínico.</footer>
 </div>
 
 <script>
@@ -564,7 +567,7 @@ footer{margin-top:64px;color:var(--muted);font-size:.85rem;border-top:1px solid 
     $("xp").textContent=S.xp+" / "+need(S.lvl);$("xpbar").style.width=(S.xp/need(S.lvl)*100)+"%";
     $("streak").textContent=S.streak+" días · ×"+mult(S.streak).toFixed(2);
     $("shields").textContent=S.shields;$("coins").textContent=S.coins;
-    const wk=$("week");wk.className="wk "+S.week;wk.textContent=S.week==="ok"?"Hecha":S.week==="bad"?"Portal cerrado · rescate 15 min":"Pendiente · domingo";
+    const wk=$("week");wk.className="wk "+S.week;wk.textContent=S.week==="ok"?"Hecha":S.week==="bad"?"Portal cerrado · rescate 10 min":"Pendiente · domingo";
     $("stats").innerHTML=STATS.map(k=>"<div><b>"+S.stats[k]+"</b>"+k+"</div>").join("");
     $("warn").innerHTML=S.fatigue?"<b>ESTADO: FATIGA.</b> XP a la mitad hasta completar el ritual de penalización (8 min).":S.week==="bad"?"<b>PORTAL SEMANAL CERRADO.</b> La Tienda está bloqueada hasta hacer la planificación de rescate.":"<b>AVISO:</b> si no completas el Ritual de Activación hoy, mañana se abre la Zona de Penalización.";
     save();
@@ -604,8 +607,8 @@ footer{margin-top:64px;color:var(--muted);font-size:.85rem;border-top:1px solid 
     S.today={r:{},b:{},choice:null};render();
   }
   $("failday").onclick=fail;
-  $("plan").onclick=()=>{const g=gain(150);S.coins+=40;S.shields=Math.min(2,S.shields+1);S.week="ok";S.prog=[0,0,0];log("Planificación semanal completa. +"+g+" XP, +40 cristales, +1 escudo. Objetivos renovados.","g");toast("Planificación semanal · +"+g+" XP");render()};
-  $("failweek").onclick=()=>{S.week="bad";log("Lunes sin planificación. Portal semanal cerrado. Rescate de 15 min disponible hasta el miércoles.","r");toast("Portal semanal cerrado");render()};
+  $("plan").onclick=()=>{const g=gain(100);S.coins+=40;S.shields=Math.min(2,S.shields+1);S.week="ok";S.prog=[0,0,0];log("Planificación semanal completa. +"+g+" XP, +40 cristales, +1 escudo. Objetivos renovados.","g");toast("Planificación semanal · +"+g+" XP");render()};
+  $("failweek").onclick=()=>{S.week="bad";log("Lunes sin planificación. Portal semanal cerrado. Rescate de 10 min disponible hasta el miércoles.","r");toast("Portal semanal cerrado");render()};
   $("reset").onclick=()=>{S=fresh();$("log").innerHTML="";log("Sistema reiniciado.","c");render()};
   load();render();log("El Ritual de Activación ha llegado.","c");
 })();

@@ -1,6 +1,6 @@
-# Sistema Despertar · Especificación v0.4
+# Sistema Despertar · Especificación v0.5
 
-Fuente visual y jugable: `prototipo/sistema-despertar-v0.4.html`.
+Fuente visual y jugable: `prototipo/sistema-despertar-v0.5.html`.
 
 ## 1. Las dos obligaciones
 Solo estas dos misiones tienen penalización. Todo lo demás es bonificación.
@@ -15,14 +15,17 @@ Solo estas dos misiones tienen penalización. Todo lo demás es bonificación.
 
 Plazo por defecto antes de las 11:00, ajustable. A las 11:00 hay un solo aviso y el plazo final pasa a las 20:00.
 
-### Planificación semanal · 30 min
-| Bloque | Duración | Contenido |
-|---|---|---|
-| Mirar atrás | 5 min | Qué se cumplió, qué se atascó y por qué |
-| Vaciar la bandeja | 8 min | Cada pendiente se borra, se agenda, se delega o va a un objetivo |
-| Radar semanal | 5 min | Eventos, compromisos, pagos y vencimientos de los próximos 14 días |
-| Tres objetivos | 7 min | Ordenarlos 1, 2 y 3 y partirlos en pasos de 25 min o menos |
-| Bloquear horas | 5 min | Poner en el calendario cuándo se trabaja cada objetivo |
+### Planificación semanal que crece · 5 a 30 min
+Decidido el 2026-11-24. Desde el día 1 se exigen 5 minutos. Cada módulo clave instalado suma un bloque, hasta 30 minutos con el módulo 8.
+Así se respeta la regla del programa: no saltar módulos.
+
+| Nivel | Se desbloquea | Duración | Contenido acumulado |
+|---|---|---|---|
+| 1 | Día 1 | 5 min | Radar de 7 días + 1 objetivo con WOOP y su primer paso |
+| 2 | Módulo 1 instalado | 10 min | + Vaciar la bandeja: borrar, agendar, delegar o asignar a un objetivo |
+| 3 | Módulo 3 instalado | 15 min | Radar amplía a 14 días con pagos y vencimientos |
+| 4 | Módulo 4 instalado | 20 min | + Mirar atrás y 3 objetivos ordenados 1, 2 y 3 |
+| 5 | Módulo 8 instalado | 30 min | + Bloquear horas en el calendario para cada objetivo |
 
 Día por defecto domingo, ajustable. Desbloquea el motor del siguiente paso de la semana.
 Incluye un chequeo de ánimo opcional de una pregunta.
@@ -30,6 +33,7 @@ Incluye un chequeo de ánimo opcional de una pregunta.
 ## 2. Motor del siguiente paso
 - Fuente: los 3 objetivos semanales y los portales abiertos, cada uno con pasos ordenados.
 - Muestra solo 2 tarjetas: **A** = primer paso pendiente del objetivo de prioridad 1. **B** = primer paso del objetivo de prioridad 2.
+- Mientras la planificación tenga 1 solo objetivo (niveles 1 a 3): **A** = su siguiente paso y **B** = una versión de 2 minutos del mismo paso.
 - A da +30 XP. B da +20 XP y no penaliza.
 - Un compromiso del radar que vence en menos de 72 h sube a prioridad 1 y el Sistema avisa el cambio.
 - Al completar un paso aparece el siguiente del mismo objetivo.
@@ -110,7 +114,7 @@ Día de recuperación: 1 por semana, el ritual se reduce a autocuidado y radar.
 | Ritual completo | +30 XP, 10 cristales, 1 Caja de recompensa |
 | Siguiente paso hecho | A: +30 XP · B: +20 XP |
 | Registrar el ánimo | +5 XP, igual para cualquier valor |
-| Planificación semanal | +150 XP, 40 cristales, 1 escudo |
+| Planificación semanal | 5 XP por minuto del nivel actual (25 a 150), 40 cristales, 1 escudo |
 | Racha de ritual | ×1,10 a los 3 días · ×1,25 a los 7 · ×1,50 a los 14 (tope) |
 | Cada 7 días de racha | 1 escudo, máximo 2 |
 | Subir de nivel | 3 puntos libres y 25 cristales |
@@ -133,9 +137,9 @@ Nunca se pierden niveles, stats, cristales ni compras. Sin mensajes de culpa. Si
 ### Planificación semanal no cumplida
 | Cuándo | Efecto |
 |---|---|
-| Lunes sin plan | Portal semanal cerrado: motor usa objetivos viejos, Tienda bloqueada. Rescate de 15 min disponible hasta el miércoles |
+| Lunes sin plan | Portal semanal cerrado: motor usa objetivos viejos, Tienda bloqueada. Rescate de la mitad del nivel actual, mínimo 5 min, disponible hasta el miércoles |
 | Miércoles sin plan | XP ×0,5 hasta el domingo. Próxima planificación con plantilla prellenada |
-| 2 semanas sin plan | Se suspende la penalización semanal. Se ofrece planificación grupal del taller o guiada por voz de 15 min |
+| 2 semanas sin plan | Se suspende la penalización semanal. Se ofrece planificación grupal del taller o guiada por voz del nivel actual |
 
 ### Freno clínico
 Ánimo muy bajo o ideas de autodaño: pausa total de penalizaciones y recursos de ayuda en Chile
