@@ -12,7 +12,7 @@ radar de compromisos, reglas de Barkley, registro de ánimo en 2 toques y almace
 3. **Decidir si los exámenes de rango bajan de 5/7 a 4/7** para calzar con la regla "4/7 = bien" del programa. Estado: esperando decisión.
 
 ## Siguiente paso
-- **A (prioridad 1):** listar los módulos del taller para armar las clases y sus misiones.
+- **A (prioridad 1):** decidir si los exámenes de rango bajan de 5/7 a 4/7.
 - **B (prioridad 2):** decidir si el radar se conecta a Google Calendar o si en v1 se ingresa a mano.
 
 ## Otros pendientes
