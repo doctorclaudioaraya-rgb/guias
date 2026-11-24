@@ -3,17 +3,17 @@
 Última actualización: 2026-11-24 (Chile).
 
 ## Dónde quedamos
-Diseño v0.5 terminado: ritual diario de 5 min, planificación semanal que crece de 5 a 30 min, motor del siguiente paso con opción A/B,
+Diseño v0.6 terminado: ritual diario de 5 min, planificación semanal que crece de 5 a 30 min, motor del siguiente paso con opción A/B,
 radar de compromisos, reglas de Barkley, registro de ánimo en 2 toques y almacenamiento local con sincronización opcional, y los 8 módulos del programa como clases. Todo está en `SPEC.md` y en el prototipo.
 
 ## 3 prioridades
 1. **Propiedad intelectual.** Confirmar con un abogado que no se usa nada protegido de Solo Leveling. Estado: sin empezar.
 2. **Verificar las reglas de Barkley** contra *Taking Charge of Adult ADHD*. Estado: citadas de memoria.
-3. **Decidir si los exámenes de rango bajan de 5/7 a 4/7** para calzar con la regla "4/7 = bien" del programa. Estado: esperando decisión.
+3. **Decidir la revisión de eventos y compromisos:** conectar Google Calendar o ingresar los eventos a mano en v1. Estado: esperando decisión.
 
 ## Siguiente paso
-- **A (prioridad 1):** decidir si los exámenes de rango bajan de 5/7 a 4/7.
-- **B (prioridad 2):** decidir si el radar se conecta a Google Calendar o si en v1 se ingresa a mano.
+- **A (prioridad 1):** decidir si el radar se conecta a Google Calendar o si en v1 se ingresa a mano.
+- **B (prioridad 2):** decidir si la bandeja de captura de la app es "la app única" del módulo 1 o si se conecta con Todoist u otras.
 
 ## Otros pendientes
 - [ ] Confirmar teléfonos Salud Responde 600 360 7777 y *4141.
@@ -36,3 +36,4 @@ radar de compromisos, reglas de Barkley, registro de ánimo en 2 toques y almace
 - [x] Planificación semanal: **decidido**, crece de 5 a 30 min con los módulos (SPEC 1).
 - [ ] Decidir si la bandeja de captura de la app es "la app única" del módulo 1, o si la app se conecta con Todoist u otras.
 - [ ] Confirmar si el taller pagado usa los mismos 8 módulos del programa gratuito del sitio.
+- [x] Exámenes de rango: **decidido**, usan 4 de 7 días (SPEC 9).
